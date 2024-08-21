@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh" dir="ltr" class="mdx-wrapper mdx-page plugin-pages plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.5.2">
+<title data-rh="true">git | bilibili</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://zhimingbai.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://zhimingbai.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://zhimingbai.github.io/first-md"><meta data-rh="true" property="og:locale" content="zh"><meta data-rh="true" name="docusaurus_locale" content="zh"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="zh"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="git | bilibili"><meta data-rh="true" name="description" content="常用命令"><meta data-rh="true" property="og:description" content="常用命令"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://zhimingbai.github.io/first-md"><link data-rh="true" rel="alternate" href="https://zhimingbai.github.io/first-md" hreflang="zh"><link data-rh="true" rel="alternate" href="https://zhimingbai.github.io/first-md" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="bilibili RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="bilibili Atom Feed"><link rel="stylesheet" href="/assets/css/styles.ce37c9a8.css">
+<script src="/assets/js/runtime~main.06a13f84.js" defer="defer"></script>
+<script src="/assets/js/main.57b039c0.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">首页</b></a><a class="navbar__item navbar__link" href="/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="切换浅色/暗黑模式（当前为浅色模式）" aria-label="切换浅色/暗黑模式（当前为浅色模式）" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><main class="container container--fluid margin-vert--lg"><div class="row mdxPageWrapper_j9I6"><div class="col col--8"><article><header><h1>git</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="常用命令">常用命令<a href="#常用命令" class="hash-link" aria-label="常用命令的直接链接" title="常用命令的直接链接">​</a></h2>
+<ul>
+<li>
+<p>配置</p>
+<ul>
+<li>name：<code>git config --global user.name &quot;baizhiming&quot;</code></li>
+<li>email：<code>git config --global user.email &quot;bai@gmail.com&quot;</code></li>
+</ul>
+</li>
+<li>
+<p>使用git</p>
+<ul>
+<li>
+<p>查看当前仓库状态：<code>git status</code></p>
+</li>
+<li>
+<p>初始化仓库：<code>git init</code></p>
+<p>​	未跟踪--》暂存</p>
+<ul>
+<li>
+<p>将文件切换到暂存状态：<code>git add &lt;filename&gt;</code> 和 <code>git add *</code>将所有已修改（未跟踪）的文件暂存</p>
+<p>暂存--》未修改</p>
+</li>
+<li>
+<p>将暂存的文件存储到仓库当中：<code>git commit -m “注释，对本次提交的解释说明”</code>和<code>git commit -a -m “xxxx”</code>提交所有已修改的文件（未跟踪的文件不会修改）</p>
+<p>未修改--》修改</p>
+</li>
+<li>
+<p>修改代码后，将会改变状态</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>
+<p>重置文件：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git restore &lt;filename&gt; # 恢复文件</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git restore --staged &lt;filename&gt; # 取消暂存状态</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p>删除文件：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git rm &lt;filename&gt; # 删除</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git rm &lt;filename&gt; -f # 强制删除</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ol>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">3. 移动文件：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> ```bash</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> git mv from to # 重命名文件</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="文件状态">文件状态<a href="#文件状态" class="hash-link" aria-label="文件状态的直接链接" title="文件状态的直接链接">​</a></h2>
+<p>git中的文件有两种状态：未跟踪和已跟踪。未跟踪指文件没有被git所管理，已跟踪指文件已被git管理。已跟踪的文件又有三种状态：未修改、修改和暂存。</p>
+<p>暂存，表示文件修改已经保存，但是尚未提交到git仓库。</p>
+<p>未修改，表示磁盘中的文件和git仓库中文件相同，没有修改。</p>
+<p>已修改，表示磁盘中文件已被修改，和git仓库中文件不同。</p>
+<p>可以通过<code>git status</code>来查看文件的状态</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="分支">分支<a href="#分支" class="hash-link" aria-label="分支的直接链接" title="分支的直接链接">​</a></h2>
+<p>git在存储文件时，每一次代码的提交都会创建一个与之对应的节点，git就是通过一个一个的节点来记录代码的状态的。节点会构成一个树状结构，树状结构就意味着这个树会存在分支，默认情况下仓库只会有一个分支，命名为master。在使用git的时候，可以创建多个分支，每个分支之间相互独立，在一个分支上修改的代码不会影响到其他的分支。</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git branch # 查看当前分支</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git branch &lt;branch name&gt; # 创建新的分支</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git branch -d &lt;branch name&gt; # 删除分支</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git switch &lt;branch name&gt; # 切换分支</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> git switch -c &lt;branch name&gt; # 创建并切换分支</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>在开发中，都是在自己的分支上编写代码，代码编写完成后，再讲自己的分支合并到主分支中。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="变基">变基<a href="#变基" class="hash-link" aria-label="变基的直接链接" title="变基的直接链接">​</a></h2>
+<p>在实际的开发过程中，我们除了可以通过==merg==来合并分支之外，还可以通过进行==变基==来完成分支的合并。</p>
+<p>我们通过merge合并分支时，在提交记录中会将所有的分支创建和分支合并的过程全部都显示出来，这样当项目比较复杂，开发过程比较波折时，我必须要反复的创建、合并、删除分支。这样一来将会使得我们代码的提交记录变得极为混乱。</p>
+<p>在Git中，“变基”（Rebase）是一种操作，用于将一个分支上的提交应用到另一个分支的顶部。变基的目的是让一个分支的历史看起来像是基于另一个分支的最新状态发展起来的，从而保持线性的提交历史。</p>
+<p>变基的基本原理：</p>
+<ol>
+<li>
+<p><strong>创建新的提交</strong>：</p>
+<ul>
+<li>当你对一个分支进行变基时，Git会创建一系列新的提 交来反映原分支的变更。这些新的提交不是简单地复制原提交，而是根据原提交与目标分支之间的差异来创建的。</li>
+</ul>
+</li>
+<li>
+<p><strong>移动分支指针</strong>：</p>
+<ul>
+<li>变基完成后，原分支的指针（通常是HEAD）会被移动到新创建的最后一个提交上。</li>
+</ul>
+</li>
+<li>
+<p><strong>解决冲突</strong>：</p>
+<ul>
+<li>如果变基过程中涉及到的提交与目标分支之间存在冲突，Git会停止变基过程并提示你解决这些冲突。一旦冲突解决，你可以继续变基过程。</li>
+</ul>
+</li>
+</ol>
+<p>变基的基本流程：</p>
+<p>假设你有两个分支：<code>main</code> 和 <code>feature</code>，<code>feature</code> 是基于 <code>main</code> 的一个较早版本创建的。下面是如何使用 <code>git rebase</code> 来更新 <code>feature</code> 分支以基于 <code>main</code> 的最新状态：</p>
+<ol>
+<li>
+<p><strong>切换到需要变基的分支</strong>：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git checkout feature</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p><strong>开始变基过程</strong>：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git rebase main</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>这会将 <code>feature</code> 分支上的提交应用到 <code>main</code> 分支的最新提交之上。</p>
+</li>
+<li>
+<p><strong>解决冲突（如果有的话）</strong>：</p>
+<ul>
+<li>如果在变基过程中出现了冲突，Git会停止变基过程并让你解决这些冲突。解决冲突后，你可以继续变基：<!-- -->
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git add &lt;conflicted-file&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git rebase --continue</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>完成变基</strong>：</p>
+<ul>
+<li>如果没有冲突，或者所有冲突都已解决，变基过程将自动完成，<code>feature</code> 分支的指针会移动到新提交的顶部。</li>
+</ul>
+</li>
+</ol>
+<p>变基的优点：</p>
+<ul>
+<li><strong>清晰的历史</strong>：变基可以使提交历史更加线性，更容易阅读和理解。</li>
+<li><strong>易于集成</strong>：变基后的分支更容易合并到其他分支中，因为它们看起来就像是在目标分支的基础上直接构建的。</li>
+</ul>
+<p>变基的注意事项：</p>
+<ul>
+<li><strong>变基会改变提交历史</strong>：变基会创建新的提交，这可能会改变原有的提交历史。对于公共分支（即已经被其他人获取的分支），谨慎使用变基，以免引起混乱。</li>
+<li><strong>避免变基已推送到共享仓库的提交</strong>：如果你的分支已经被其他人拉取或合并，那么不应该对该分支进行变基，否则会引发历史记录的不一致。</li>
+</ul>
+<p>如果你有任何具体的问题或需要进一步的帮助，请随时提问。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="远程仓库">远程仓库<a href="#远程仓库" class="hash-link" aria-label="远程仓库的直接链接" title="远程仓库的直接链接">​</a></h2>
+<p>目前我对于 git 所有操作都是在本地进行的。在开发中显然不能这样的，这时我们就需要一个远程  的 git 仓库。远程的 git 仓库和本地的本质没有什么区别，不同点在于远程的仓库可以被多人同时访问使用，方便我们协同开发。在实际工作中，git 的服务器通常由公司搭建内部使用或是购买一些公共的私有 git 服务器。我们学习阶段，直接使用一些开放的公共 git 仓库。目前我们常用的库有两个：GitHub 和 Gitee（码云）</p>
+<p>将本地库上传 github：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git remote add origin https://github.com/zhimingbai/git-demo</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># git remote add &lt;remote name&gt; &lt;url&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git branch -M main</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 修改分支的名字的为main</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git push -u origin main</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># git push 将代码上传服务器上</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>将本地库上传 gitee：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git remote add gitee https://gitee.com/angelica-tea/git-study.git</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git push -u gitee main</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol>
+<li>
+<p>远程库的操作的命令</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git remote # 列出当前的关联的远程库</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git remote add &lt;远程库名&gt; &lt;url&gt; # 关联远程仓库</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git remote remove &lt;远程库名&gt;  # 删除远程库</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git push -u &lt;远程库名&gt; &lt;分支名&gt; # 向远程库推送代码，并和当前分支关联</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git push &lt;远程库&gt; &lt;本地分支&gt;:&lt;远程分支&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git clone &lt;url&gt; # 从远程库下载代码</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git push # 如果本地的版本低于远程库，push默认是推不上去</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git fetch # 要想推送成功，必须先确保本地库和远程库的版本一致，fetch它会从远程仓库下载所有代码，但是它不会将代码和当前分支自动合并</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">		 # 使用fetch拉取代码后，必须要手动对代码进行合并</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git pull  # 从服务器上拉取代码并自动合并</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>注意：推送代码之前，一定要先从远程库中拉取最新的代码</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tag标签">tag标签<a href="#tag标签" class="hash-link" aria-label="tag标签的直接链接" title="tag标签的直接链接">​</a></h2>
+</li>
+</ol>
+<ul>
+<li>
+<p>当头指针没有执行某个分支的头部时，这种状态我们称为分离头指针（HEAD detached），分离头指针的状态下也可以操作操作代码，但是这些操作不会出现在任何的分支上，所以注意不要再分离头指针的状态下来操作仓库。</p>
+</li>
+<li>
+<p>如果非得要回到后边的节点对代码进行操作，则可以选择创建分支后再操作</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git switch -c &lt;分支名&gt; &lt;提交id&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p>可以为提交记录设置标签，设置标签以后，可以通过标签快速的识别出不同的开发节点：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git tag</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git tag 版本</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git tag 版本 提交id</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git push 远程仓库 标签名</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git push 远程仓库 --tags</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git tag -d 标签名 # 删除标签</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git push 远程仓库 --delete 标签名 # 删除远程标签</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul></article></div><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#常用命令" class="table-of-contents__link toc-highlight">常用命令</a></li><li><a href="#文件状态" class="table-of-contents__link toc-highlight">文件状态</a></li><li><a href="#分支" class="table-of-contents__link toc-highlight">分支</a></li><li><a href="#变基" class="table-of-contents__link toc-highlight">变基</a></li><li><a href="#远程仓库" class="table-of-contents__link toc-highlight">远程仓库</a></li><li><a href="#tag标签" class="table-of-contents__link toc-highlight">tag标签</a></li></ul></div></div></div></main></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 by baizhiming.</div></div></div></footer></div>
+</body>
+</html>
